@@ -2,6 +2,8 @@
 import pygame
 import random
 
+# es aris satesto kodi
+
 # პაგეიმის ინიციალიზაცია
 pygame.init()
 
