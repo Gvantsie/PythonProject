@@ -2,8 +2,6 @@
 import pygame
 import random
 
-# es aris satesto kodi
-
 # პაგეიმის ინიციალიზაცია
 pygame.init()
 
@@ -60,6 +58,13 @@ class Enemy:
     def draw(self, screen):
         pygame.draw.rect(screen, BLUE, (self.x, self.y, self.width, self.height))
 
+class Sprite:
+    def __init__(self, x, y, width, height):
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+        
 enemies = []
 enemy_timer = 0
 ENEMY_SPAWN_RATE = 60
